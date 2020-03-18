@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="ass.css">
+
+<style>
+
+
+.table_div{
+width:80%;
+float: right;
+
+}
+
+table{
+border-collapse: collapse;
+width: 100%;
+}
+
+table, th, td{
+border: 1px solid black;
+}
+
+th{
+background-color: teal;
+color: white;
+}
+
+tr:nth-child(odd){
+background-color: #f3f3f3;
+}
+
+tr:hover{
+background-color: grey;
+}
+
+tr:last-child{
+background-color: maroon;
+}
+
+
+
+
+</style
+</head>
+
+<body>
+
+<div id="headid">
+<header>
+	<h1>Table Page</h1>
+</header>
+</div>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Table</a>
+    <a href="parent_link.html">Parent</a>
+    <a href="formlink.html">FORM</a>
+	<a href="login.html">Log Out</a>
+  </div>
+</div>
+
+<div class="table_div">
+<table align="center">
+
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+
+  <tr>
+    <td rowspan=0></td>
+    <td>Walker</td> 
+    <td>50</td>
+  </tr>
+
+  <tr>
+    
+    <td rowspan = 2>Daniels</td> 
+    <td>54</td>
+  </tr>
+
+  <tr>
+    
+    
+    <td>94</td>
+  </tr>
+
+  <tr>
+  <td>Jameson</td>
+	<td>45</td>
+  </tr>
+
+   <tr>
+  <td colspan=2>Teacher</td>
+  </tr>
+  
+  
+  </table>
+
+</div>
+
+<span  onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "20%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+</body>
